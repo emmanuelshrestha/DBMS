@@ -56,7 +56,7 @@ header {
     color: #DEE1E4;
 }
 
-section {
+div {
     margin: 20px auto;
     padding: 40px; /* Increased padding for a larger container */
     background: #262829; /* Dark Gray */

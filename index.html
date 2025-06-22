@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataBase Management System</title>
+    <title>Database Management System</title>
     <link rel="stylesheet" href="global.css">
 </head>
 <body>
@@ -18,12 +18,126 @@
     </nav>
 
     <header>
-        <h1>DataBase Management System</h1>
+        <h1>Database Management System</h1>
     </header>
 
-    <section>
+    <div>
+        <h2>1) DATA</h2>
+        <p>Data refers to raw facts, figures, or symbols that are processed to produce meaningful information. It can be in various formats such as text, numbers, audio, or images and is the backbone of any computational or digital system. Data becomes meaningful only when it is processed and analyzed in a structured way. In modern systems, data is crucial for decision-making, system operations, automation, and analytics.</p>
         
-    </section>
+        <h3>1.1 Data Types</h3>
+        <p>Data types define the type of data a variable can hold and how the computer interprets that data. Proper data typing ensures efficient data storage and accurate computations. Common data types include:</p>
+        <ul>
+            <li><strong>Integer:</strong> Stores whole numbers (e.g., 1, -45). Used for counting or indexing.</li>
+            <li><strong>Float/Double:</strong> Stores decimal numbers (e.g., 3.14, -0.001). Used in scientific calculations.</li>
+            <li><strong>Character:</strong> Represents a single alphabet, number, or symbol (e.g., 'A', '5').</li>
+            <li><strong>String:</strong> A sequence of characters (e.g., "Hello World"). Used for names, sentences, etc.</li>
+            <li><strong>Boolean:</strong> Represents true or false. Used in logic operations.</li>
+            <li><strong>Date/Time:</strong> Holds date and time values for scheduling, timestamps, etc.</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h2>2) DATABASE</h2>
+        <p>A database is an organized collection of structured information or data, typically stored electronically in a computer system. A database allows for efficient storage, retrieval, manipulation, and deletion of data.</p>
 
+        <h3>2.1 Types of Databases</h3>
+        <ul>
+            <li><strong>Relational Databases:</strong> Store data in tables with rows and columns. Data can be related using keys (e.g., MySQL, PostgreSQL).</li>
+            <li><strong>NoSQL Databases:</strong> Non-tabular databases that store data in formats like documents, graphs, key-value pairs (e.g., MongoDB, Cassandra).</li>
+            <li><strong>Object-Oriented Databases:</strong> Store data in the form of objects, similar to object-oriented programming.</li>
+            <li><strong>Hierarchical Databases:</strong> Organize data in a tree-like structure. Each child has only one parent (e.g., IBM IMS).</li>
+            <li><strong>Network Databases:</strong> More complex than hierarchical; records can have multiple parent and child relationships.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>3) SOFTWARE/SYSTEMS (DOMAIN SPECIFIC)</h2>
+        <p>Domain-specific software or systems are specialized applications tailored to meet the unique requirements of particular industries, fields, or professional practices. Unlike general-purpose software, these systems are designed to address specific challenges, improve operational efficiency, and enhance productivity in a targeted sector.</p>
+        
+        <h3>3.1 Database Management System (DBMS)</h3>
+        <p>A DBMS is software that interacts with the database, users, and applications. It handles data definition, storage, retrieval, and security. Examples include Oracle, MySQL, and Microsoft SQL Server.</p>
+        
+        <h3>3.2 Accounting System</h3>
+        <p>Accounting systems manage financial data. They handle invoices, payroll, tax computation, balance sheets, and general ledgers. Examples include Tally, QuickBooks, and Zoho Books.</p>
+        
+        <h3>3.3 Attendance System</h3>
+        <p>These systems track attendance records of employees or students. Technologies like RFID, biometrics, QR codes, or online check-ins are commonly used. Benefits include automation, real-time reporting, and fraud reduction.</p>
+    </div>
+    
+    <div>
+        <h2>4) SOFTWARE DEVELOPMENT</h2>
+        <p>The process of creating, designing, deploying, and maintaining software applications.</p>
+        
+        <h3>4.1 Database Design</h3>
+        <p>This involves creating a detailed data model, defining tables, fields, relationships, indexes, and constraints. A good design avoids redundancy, ensures data integrity, and supports performance.</p>
+        
+        <h3>4.2 Database Administration</h3>
+        <p>A database administrator (DBA) is responsible for installing, configuring, upgrading, monitoring, and securing the database system. They also ensure data backup and disaster recovery.</p>
+    </div>
+    
+    <div>
+        <h2>SERVER</h2>
+        <p>A server is a powerful computer system that provides services, data, and applications to other computers (clients) over a network. In a database environment, the server hosts the DBMS and processes client queries.</p>
+    </div>
+    
+    <div>
+        <h2>SQL (Structured Query Language)</h2>
+        <p>SQL is a standard and widely-used programming language designed specifically for managing and manipulating relational databases. It allows users to interact with databases using simple, declarative statements. SQL supports the creation of schemas, manipulation of data, retrieval of information, and control over access permissions.</p>
+
+        <h3>DDL (Data Definition Language)</h3>
+        <p>DDL commands are used to define, modify, and remove database structures such as tables, schemas, and indexes.</p>
+        <ul>
+            <li><strong>CREATE:</strong> Creates new tables, views, or entire databases.</li>
+            <li><strong>ALTER:</strong> Alters the structure of an existing database object (e.g., adding a new column).</li>
+            <li><strong>DROP:</strong> Permanently deletes an object from the database, such as a table or a column.</li>
+            <li><strong>TRUNCATE:</strong> Removes all records from a table, but retains the table structure for future use.</li>
+        </ul>
+        
+        <h3>DML (Data Manipulation Language)</h3>
+        <p>DML is used to manage data within the objects defined by DDL. It allows you to insert, update, and delete data.</p>
+        <ul>
+            <li><strong>INSERT:</strong> Adds new rows into a table.</li>
+            <li><strong>UPDATE:</strong> Modifies existing data based on specified criteria.</li>
+            <li><strong>DELETE:</strong> Removes rows from a table based on a condition.</li>
+        </ul>
+
+        <h3>DQL (Data Query Language)</h3>
+        <p>DQL is primarily concerned with querying data.</p>
+        <ul>
+            <li><strong>SELECT:</strong> Retrieves data from one or more tables. It can be combined with WHERE, GROUP BY, ORDER BY, and JOIN clauses to filter and organize data.</li>
+        </ul>
+
+        <h3>DCL (Data Control Language)</h3>
+        <p>DCL is used to control access to data stored in a database.</p>
+        <ul>
+            <li><strong>GRANT:</strong> Gives user privileges to perform tasks.</li>
+            <li><strong>REVOKE:</strong> Removes privileges that have been previously granted.</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h2>SQL Joins</h2>
+        <p>Joins allow you to combine data from multiple tables based on a related column.</p>
+        <ul>
+            <li><strong>INNER JOIN:</strong> Returns only records with matching values in both tables.</li>
+            <li><strong>LEFT JOIN (LEFT OUTER JOIN):</strong> Returns all records from the left table and matched records from the right table.</li>
+            <li><strong>RIGHT JOIN (RIGHT OUTER JOIN):</strong> Returns all records from the right table and matched records from the left table.</li>
+            <li><strong>FULL JOIN (FULL OUTER JOIN):</strong> Returns all records when there is a match in either table.</li>
+            <li><strong>SELF JOIN:</strong> Joins a table to itself.</li>
+            <li><strong>CROSS JOIN:</strong> Produces a Cartesian product of both tables.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>CRUD Operations</h2>
+        <p>CRUD stands for Create, Read, Update, and Delete. These are the four basic operations that are used in most databases for managing data.</p>
+        <ul>
+            <li><strong>Create:</strong> Adds new records to a table (similar to SQL INSERT).</li>
+            <li><strong>Read:</strong> Retrieves data from a table (similar to SQL SELECT).</li>
+            <li><strong>Update:</strong> Modifies existing data in a table (similar to SQL UPDATE).</li>
+            <li><strong>Delete:</strong> Removes records from a table (similar to SQL DELETE).</li>
+        </ul>
+    </div>
 </body>
 </html>
